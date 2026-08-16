@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+
+  --color-navy: #1c2f4a;
+  --color-navy-light: #2c4468;
+  --color-paper: #faf6ec;
+  --color-paper-dark: #f0e9d8;
+  --color-ink: #2a2620;
+  --color-brass: #a9822f;
+  --color-stamp: #a13d2f;
+  --color-line: #d8cfb8;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.paper-grain {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.035) 1px, transparent 1px);
+  background-size: 3px 3px;
+}
+
+.perforation {
+  height: 1px;
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--color-line) 0 4px,
+    transparent 4px 8px
+  );
+}
+
+@keyframes stamp {
+  0% {
+    transform: scale(1.4) rotate(-10deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(0.95) rotate(-10deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(-10deg);
+    opacity: 1;
+  }
+}
+.animate-stamp {
+  animation: stamp 0.35s ease-out;
+}
