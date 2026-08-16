@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Hackathon Voting System
+
+A single-precinct voting app built with Next.js, TypeScript, Tailwind CSS, and React Query.
+
+## Features
+- Registered voter roll (dynamic — voters can be added)
+- One vote per registered voter, enforced server-side
+- Live tally board with leader indicator
+- Winner banner once all votes are cast
+- File-backed persistence (no in-memory state)
 
 ## Getting Started
 
