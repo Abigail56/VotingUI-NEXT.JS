@@ -1,51 +1,47 @@
-https://voting-ui-next-js.vercel.app/
-
 # Hackathon Voting System
 
-A single-precinct voting app built with Next.js, TypeScript, Tailwind CSS, and React Query.
+A single-precinct voting application built with Next.js, TypeScript, Tailwind CSS, and React Query. It supports voter registration, one-vote-per-voter enforcement, and a live tally board.
+
+**Live demo:** https://voting-ui-next-js.vercel.app/
 
 ## Features
-- Registered voter roll (dynamic — voters can be added)
-- One vote per registered voter, enforced server-side
-- Live tally board with leader indicator
-- Winner banner once all votes are cast
-- File-backed persistence (no in-memory state)
 
-## Getting Started
+- Dynamic registered-voter roll
+- Server-side enforcement of one vote per registered voter
+- Live tally board with a leader indicator
+- Winner banner when all votes have been cast
+- File-backed persistence
 
-First, run the development server:
+## Tech stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- React Query
+
+## Run locally
+
+**Requirements:** Node.js and npm.
 
 ```bash
+git clone https://github.com/Abigail56/VotingUI-NEXT.JS.git
+cd VotingUI-NEXT.JS
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Available scripts
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+npm run dev      # Start the development server
+npm run build    # Create a production build
+npm start        # Serve the production build
+npm run lint     # Run lint checks (if configured)
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Important note
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+This project is a demonstration voting application, not a production election system. Production voting requires stronger identity verification, auditing, security review, durable infrastructure, and legally compliant procedures.
